@@ -1,0 +1,15 @@
+[package]
+name = "ad2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scan_fmt = "0.2"
+
+[source.crates-io]
+replace-with = 'my-registry'
+
+[source.my-registry]
+registry = 'https://github.com/rust-lang/crates.io-index'
